@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
+--
+-- Host: localhost    Database: migros
+-- ------------------------------------------------------
+-- Server version	8.0.26
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `store`
+--
+
+DROP TABLE IF EXISTS `store`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `store` (
+  `store_id` bigint NOT NULL,
+  `store_name` varchar(45) NOT NULL,
+  `store_lat` decimal(10,8) DEFAULT NULL,
+  `store_lgt` decimal(11,8) DEFAULT NULL,
+  PRIMARY KEY (`store_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `store`
+--
+
+LOCK TABLES `store` WRITE;
+/*!40000 ALTER TABLE `store` DISABLE KEYS */;
+INSERT INTO `store` VALUES (1,'Ataşehir MMM Migros',40.99233070,29.12442290),(2,'Novada MMM Migros',40.98610600,29.11612930),(3,'Beylikdüzü 5M Migros',41.00668510,28.65522620),(4,'Ortaköy MMM Migros',41.05578300,29.02102920),(5,'Caddebostan MMM Migros',40.96324630,29.06309080);
+/*!40000 ALTER TABLE `store` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-09-10 20:49:42

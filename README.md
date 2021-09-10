@@ -51,7 +51,7 @@ Which design patterns i used?
 
 Builder: Lombok automatically prepares builder with just @Builder annotation. I used it for exception response and tests.
 
-Singleton: SwaggerConfig, Entity, Controller, Repository etc. All springs beans scope is default singleton.
+Singleton: SwaggerConfig, Entity, Controller, Repository etc. All spring beans scope is default singleton.
 
 IoC: Spring IoC Container has IoC Pattern. IoC Container is managing beans and their dependencies.
 

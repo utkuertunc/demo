@@ -29,9 +29,6 @@ public class CourierController {
     CourierService courierService;
 
     @Autowired
-    CourierRepository courierRepository;
-
-    @Autowired
     MathService mathService;
 
     @Autowired

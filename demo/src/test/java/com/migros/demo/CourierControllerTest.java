@@ -1,28 +1,19 @@
 package com.migros.demo;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.migros.demo.controller.CourierController;
 import com.migros.demo.entity.Courier;
-import com.migros.demo.repository.CourierRepository;
-import com.migros.demo.repository.StoreRepository;
 import com.migros.demo.service.CourierService;
-import com.migros.demo.service.MathService;
-import com.migros.demo.service.StoreService;
-import javassist.NotFoundException;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.web.util.NestedServletException;
 
-import javax.validation.constraints.Null;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
